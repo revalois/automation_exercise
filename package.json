@@ -1,0 +1,14 @@
+{
+  "name": "amazon.test",
+  "version": "1.0.0",
+  "description": "Este projeto é destinado a automatização de teste, utilizando o Cypress, no site da Amazon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Renata Valois",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.11.0"
+  }
+}
