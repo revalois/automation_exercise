@@ -1,11 +1,12 @@
-//acoes de interação com a página
-const signUpElement = require('./elements').ELEMENTS;
+// Ações de interação com a página
+
+const signUpElement = require('./elements').SIGNIN_ELEMENTS;
 const formElement = require('./elements').FORM_ELEMENTS;
+const homeElement = require('../home_elements').HOME_ELEMENTS;
 
 class SignIn {
   goToSigninPage() {
-    cy.visit('https://www.automationexercise.com/');
-    cy.get('.shop-menu > .nav > :nth-child(4) > a').click();
+    cy.get(homeElement.signupLogin).click();
   }
 
   accessSignInForm() {
@@ -29,7 +30,7 @@ class SignIn {
     cy.get(formElement.city).type('Toronto');
     cy.get(formElement.zipcode).type('123456');
     cy.get(formElement.mobile_number).type('+1123456789');
-    // cy.get(formElement.create_account).click();
+    cy.get(formElement.create_account).click();
   }
 }
 

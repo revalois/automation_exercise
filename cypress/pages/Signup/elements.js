@@ -1,5 +1,5 @@
-//Elementos de interação da página
-export const ELEMENTS = {
+// Elementos de interação da página
+export const SIGNIN_ELEMENTS = {
   name: '[data-qa="signup-name"]',
   email: '[data-qa="signup-email"]',
   signupButton: '[data-qa="signup-button"]',
@@ -19,5 +19,5 @@ export const FORM_ELEMENTS = {
   city: '[data-qa="city"]',
   zipcode: '[data-qa="zipcode"]',
   mobile_number: '[data-qa="mobile_number"]',
-  create_account: '[data-qa="create_account"]',
+  create_account: '[data-qa="create-account"]',
 };
